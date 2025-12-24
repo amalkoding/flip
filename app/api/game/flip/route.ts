@@ -4,6 +4,8 @@ import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(req: Request) {
     try {
         const { walletAddress, amount } = await req.json();

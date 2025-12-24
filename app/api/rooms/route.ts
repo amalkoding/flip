@@ -3,6 +3,8 @@ import { db } from "@/lib/db";
 import { rooms, users } from "@/lib/db/schema";
 import { eq, desc } from "drizzle-orm";
 
+export const dynamic = 'force-dynamic';
+
 // GET /api/rooms - Fetch all active rooms
 export async function GET() {
     try {
