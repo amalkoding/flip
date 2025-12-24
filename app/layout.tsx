@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Flip Casino - Web3 Bottle Flip Game",
   description: "Test your luck with Flip Bottle - A Web3 casino game",
+  icons: {
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon/favicon-16x16.png",
+    apple: "/favicon/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
